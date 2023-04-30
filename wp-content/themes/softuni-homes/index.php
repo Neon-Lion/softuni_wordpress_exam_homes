@@ -7,7 +7,7 @@
 			<?php endwhile ?>
 			<?php posts_nav_link(); ?>
 		<?php else : ?>		
-				<?php esc_html_e( 'Not found posts.', 'softuni' ); ?>
+				<?php _e( 'Not found posts.', 'softuni' ); ?>
 		<?php endif ?>
 	</ul>
 <?php get_footer(); ?>
