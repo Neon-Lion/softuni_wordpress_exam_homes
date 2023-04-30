@@ -20,3 +20,15 @@
                     <p class="site-title"><a href="<?php echo esc_url( get_home_url() ); ?>">Properties Offers</a></p>
                 <?php endif ?>
             </header>
+            <div class="header-nav-menu">
+                <?php
+                    if( has_nav_menu( 'primary_menu' ) ) {
+                        wp_nav_menu(
+                            array(
+                                'theme_location' => 'primary_menu',
+                                'container'      => 'nav'
+                            )
+                        );
+                    }
+                ?>
+            </div>
