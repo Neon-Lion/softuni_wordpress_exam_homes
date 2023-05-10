@@ -4,7 +4,7 @@
 		<?php if ( have_posts() ) : ?>
 			<?php while ( have_posts() ) : ?>
 				<?php the_post(); ?>
-				<?php get_template_part( 'partials/content', 'archive' ); ?>
+				<?php get_template_part( 'partials/content', 'property-card' ); ?>
 			<?php endwhile ?>
 			<?php posts_nav_link(); ?>
 		<?php else : ?>		
