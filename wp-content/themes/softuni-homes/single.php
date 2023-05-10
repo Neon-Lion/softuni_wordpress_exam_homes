@@ -58,7 +58,7 @@
 				<?php if( has_post_thumbnail() ) : ?>
 					<?php the_post_thumbnail( 'home-thumbnail' ); ?>
 				<?php else : ?>
-					<img src="https://i.imgur.com/ZbILm3F.png" alt="property image">
+					<img src="<?php echo get_template_directory_uri() . '/assets/images/bedroom.jpg'; ?>" alt="property image">
 				<?php endif ?>
 			</div>
 		</div>
@@ -82,7 +82,7 @@
 		</div>
 		<div class="property-image">
 			<div class="property-image-box">
-				<img src="images/bedroom.jpg" alt="property image">
+				<img src="<?php echo get_template_directory_uri() . '/assets/images/bedroom.jpg'; ?>" alt="property image">
 			</div>
 		</div>
 	</li>
@@ -101,7 +101,7 @@
 		</div>
 		<div class="property-image">
 			<div class="property-image-box">
-				<img src="images/bedroom.jpg" alt="property image">
+				<img src="<?php echo get_template_directory_uri() . '/assets/images/bedroom.jpg'; ?>" alt="property image">
 			</div>
 		</div>
 	</li>
